@@ -1,29 +1,34 @@
 # Editor's Note
 
-Welcome to the December 2025 edition of the M&E Gazette. This month, we reflect on a year of impactful data collection and analysis, and look forward to new initiatives in the coming year. We have a special feature on the results of our latest farmer survey.
+Welcome to the first edition of the December 2025 M&E Monthly Newsletter. In order to make our work more visible to the wider program team, we decided to launch this monthly newsletter. Each month we will share progress updates on our studies and key developments from the M&E department.
+
+For this edition, we highlight our recent data collection activities in Amhara and the South, as well as work on communal land and youth-focused surveys. We also provide a closer look at findings emerging from the Amhara planting phone survey.
 
 ---
 
 ## Monthly Highlights
 
-*   **Data Quality Audit:** Completed a comprehensive data quality audit for our core programs, achieving a 98% accuracy rate.
-*   **Impact Brief Published:** Released a new brief on the impact of our climate-smart agriculture initiatives.
-*   **Field Team Training:** Successfully trained 50 new field officers on our updated data collection protocols.
+*   **Amhara Phone Planting Survey:** Data collection completed.
+*   **South In-Person Planting Survey:** In-person planting survey in the South completed.
+*   **Communal Land Survey:** Communal land survey completed.
+*   **MCF Survey with Youth Farmers:** MCF survey with youth farmers ongoing.
 
 ---
 
-## Deep-Dive: Annual Farmer Survey Results
+## Deep-Dive: Amhara Phone Planting Survey
 
-The 2025 planting survey was conducted provides critical insights into the livelihoods and challenges of the farmers we serve. This year's survey reached over 10,000 households and focused on the adoption of new seed varieties and the economic impact of our programs. Initial findings indicate a 25% increase in the adoption of drought-resistant maize, a significant milestone for food security in the region.
+We have completed the Amhara phone planting survey, providing critical insights into planting decisions and constraints faced by farmers this season. Initial results suggest notable variation in planting timing across districts, with earlier adopters more likely to be using improved seed varieties.
 
-> "The data clearly shows that access to improved seeds is directly contributing to higher yields and increased household income. This is a testament to the hard work of our field teams and the resilience of the farmers."
+Preliminary trends indicate that households with better access to extension services and input markets are more likely to report timely planting and higher expected yields. These insights will help refine our support to farmers ahead of the next season.
 
-Further analysis is underway to explore the relationship between training participation and farmer outcomes. A full report will be published by the end of January 2026.
+> "The early results from Amhara show how timely information and access to inputs can shift planting behavior in ways that improve productivity. This underscores the importance of sustained engagement with farmers and local partners."
+
+Further analysis is underway, and a more detailed summary of the Amhara phone planting survey results will be shared in the next edition of the newsletter.
 
 ---
 
 ## Priorities for Next Month
 
 1.  **Q1 Planning:** Finalize the M&E work plan and budget for the first quarter of 2026. (Owner: M&E Lead)
-2.  **Survey Data Analysis:** Complete the full analysis of the annual farmer survey data. (Owner: Data Analysis Team)
+2.  **Survey Data Analysis:** Complete the full analysis of the Amhara phone planting survey and integrate findings from the South and communal land surveys. (Owner: Data Analysis Team)
 3.  **New Dashboard Rollout:** Launch the new program performance dashboard for field managers. (Owner: IT/M&E Team)
