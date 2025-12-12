@@ -1,10 +1,11 @@
 import markdown2
 import os
+from weasyprint import HTML
 
 def build_newsletter():
     """
     Reads content from content.md, converts it to HTML,
-    and injects it into the newsletter template.
+    injects it into the newsletter template, and generates a PDF.
     """
     try:
         # Read the Markdown content
@@ -16,7 +17,6 @@ def build_newsletter():
             template_html = f.read()
 
         # Convert Markdown to HTML
-        # Using markdown2 with extras for features like tables, fenced code blocks, etc.
         html_content = markdown2.markdown(markdown_content, extras=['fenced-code-blocks', 'tables', 'cuddled-lists', 'break-on-newline', 'header-ids', 'pyshell', 'smarty-pants', 'spoiler', 'wiki-tables', 'xml'])
 
         # Inject the content into the template
@@ -26,9 +26,14 @@ def build_newsletter():
         output_filename = 'docs/index.html'
         with open(output_filename, 'w', encoding='utf-8') as f:
             f.write(final_html)
-
         print(f"Successfully built the newsletter: {output_filename}")
-        print("You can open this file in your browser to see the result.")
+
+        # Generate PDF from HTML
+        pdf_output_filename = 'docs/newsletter.pdf'
+        HTML(string=final_html, base_url=os.getcwd()).write_pdf(pdf_output_filename)
+        print(f"Successfully generated PDF: {pdf_output_filename}")
+
+        print("You can open the HTML file in your browser to see the result.")
 
     except FileNotFoundError as e:
         print(f"Error: {e}. Make sure 'content.md' and 'templates/newsletter.html' exist.")
