@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+  <rect width="400" height="120" rx="8" fill="#2b7f68"/>
+  <g transform="translate(24,18)">
+    <circle cx="36" cy="36" r="28" fill="#e8b757"/>
+    <text x="36" y="44" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#2b7f68" font-weight="700" text-anchor="middle">OAF</text>
+  </g>
+  <text x="120" y="70" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#ffffff" font-weight="700">OAF M&amp;E</text>
+  <text x="120" y="95" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#f1f1f1">Monitoring &amp; Evaluation — Ethiopia</text>
+</svg>

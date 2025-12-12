@@ -1,0 +1,39 @@
+import markdown2
+import os
+
+def build_newsletter():
+    """
+    Reads content from content.md, converts it to HTML,
+    and injects it into the newsletter template.
+    """
+    try:
+        # Read the Markdown content
+        with open('content.md', 'r', encoding='utf-8') as f:
+            markdown_content = f.read()
+
+        # Read the HTML template
+        with open('templates/newsletter.html', 'r', encoding='utf-8') as f:
+            template_html = f.read()
+
+        # Convert Markdown to HTML
+        # Using markdown2 with extras for features like tables, fenced code blocks, etc.
+        html_content = markdown2.markdown(markdown_content, extras=['fenced-code-blocks', 'tables', 'cuddled-lists', 'break-on-newline', 'header-ids', 'pyshell', 'smarty-pants', 'spoiler', 'wiki-tables', 'xml'])
+
+        # Inject the content into the template
+        final_html = template_html.replace('{{content}}', html_content)
+
+        # Write the final HTML to a new file
+        output_filename = 'newsletter_final.html'
+        with open(output_filename, 'w', encoding='utf-8') as f:
+            f.write(final_html)
+
+        print(f"Successfully built the newsletter: {output_filename}")
+        print("You can open this file in your browser to see the result.")
+
+    except FileNotFoundError as e:
+        print(f"Error: {e}. Make sure 'content.md' and 'templates/newsletter.html' exist.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+if __name__ == "__main__":
+    build_newsletter()
