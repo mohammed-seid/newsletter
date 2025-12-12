@@ -3,45 +3,128 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>OAF M&E Monthly — Gazette</title>
+  <title>OAF ETH MEL Monthly Newsletter</title>
   <style>
-    /* Basic responsive email styles */
-    body{margin:0;padding:0;background:#f7f7f7;font-family:Georgia, 'Times New Roman', serif;color:#111}
-    .email-wrap{max-width:700px;margin:0 auto;background:#ffffff;border:1px solid #ddd;}
-    img{max-width:100%;height:auto;display:block}
-    .masthead{background:#2b7f68;color:#fff;padding:20px; text-align: center;}
-    .masthead .logo{vertical-align:middle; margin: 0 auto;}
-    .masthead h1{margin:10px 0 5px;font-family:Georgia, 'Times New Roman', serif;font-size:28px; font-weight: 700;}
-    .masthead .subtitle{font-size:14px;opacity:0.95; font-family: Arial, Helvetica, sans-serif;}
-    .hero{padding:0}
-    .content{padding:25px}
-    h2{color:#2b7f68;margin:15px 0 10px;font-family:Georgia, 'Times New Roman', serif; font-size: 22px; border-bottom: 2px solid #e8b757; padding-bottom: 5px;}
-    .accent{color:#e8b757}
-    .card{border-top:1px solid #e6e6e6;padding:15px 0}
-    .cols{display:flex;flex-wrap:wrap}
-    .col{flex:1 1 100%;padding:10px}
-    @media(min-width:520px){.col{flex:1 1 45%}}
-    .footer{font-size:12px;color:#666;padding:20px;text-align:center; background: #f7f7f7;}
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #333;
+    }
+    .email-wrap {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .masthead {
+      background-color: #2a7f68;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .masthead .logo {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    .masthead h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0 0 10px;
+      letter-spacing: -1px;
+    }
+    .masthead .subtitle {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    .content {
+      padding: 30px;
+    }
+    .content-body {
+      column-count: 2;
+      column-gap: 40px;
+      margin-top: 20px;
+    }
+    .content-body h1, .content-body h2 {
+        column-span: all;
+    }
+    h1, h2, h3 {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #111;
+    }
+    h1 { font-size: 28px; }
+    h2 {
+      font-size: 24px;
+      color: #2a7f68;
+      border-bottom: 3px solid #e8b757;
+      padding-bottom: 8px;
+      margin-top: 25px;
+    }
+    .image-placeholder {
+      margin: 30px 0;
+      text-align: center;
+    }
+    .image-placeholder img {
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .image-placeholder .caption {
+      font-size: 14px;
+      color: #777;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    blockquote {
+      border-left: 4px solid #e8b757;
+      padding-left: 20px;
+      margin: 20px 0;
+      font-size: 18px;
+      font-style: italic;
+      color: #555;
+    }
+    .credits {
+        border-top: 1px solid #e0e0e0;
+        margin-top: 40px;
+        padding-top: 20px;
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+    }
+    .credits .editor { font-weight: bold; }
+    .footer {
+      background: #f0f2f5;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+    }
     .button{display:inline-block;padding:12px 20px;background:#e8b757;color:#111;border-radius:5px;text-decoration:none;font-weight:700; font-family: Arial, Helvetica, sans-serif;}
-    p { font-size: 16px; line-height: 1.6;}
-    ul, ol { padding-left: 20px; }
-    li { margin-bottom: 10px; }
+    @media (max-width: 600px) {
+      .content-body {
+        column-count: 1;
+      }
+      .masthead h1 { font-size: 28px; }
+    }
   </style>
 </head>
 <body>
   <div class="email-wrap">
     <div class="masthead">
-      <img class="logo" src="../assets/logo-placeholder.svg" alt="OAF M&E logo" width="100">
-      <h1>OAF M&E Gazette</h1>
-      <div class="subtitle">Issue: December 2025 &nbsp; | &nbsp; Monitoring &amp; Evaluation — Ethiopia</div>
-    </div>
-
-    <div class="hero">
-      <img src="https://via.placeholder.com/1200x400.png?text=Gazette+Hero+Image" alt="Hero image: field activity" style="width:100%;height:auto">
+      <img class="logo" src="../assets/oaf-logo.png" alt="OAF Logo">
+      <h1>OAF ETH MEL Monthly Newsletter</h1>
+      <div class="subtitle">DECEMBER 2025  |  Monitoring, Evaluation & Learning — Ethiopia</div>
     </div>
 
     <div class="content">
-      <h1 id="editors-note">Editor&#8217;s Note</h1>
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/600x400.png?text=Insert+Your+Image+Here" alt="Image placeholder">
+            <div class="caption">A placeholder for a relevant image. You can replace this.</div>
+        </div>
+        <h1 id="editors-note">Editor&#8217;s Note</h1>
 
 <p>Welcome to the first edition of the December 2025 M&amp;E Monthly Newsletter. In order to make our work more visible to the wider program team, we decided to launch this monthly newsletter. Each month we will share progress updates on our studies and key developments from the M&amp;E department.</p>
 
@@ -82,14 +165,19 @@
 <li><strong>New Dashboard Rollout:</strong> Launch the new program performance dashboard for field managers. (Owner: IT/M&amp;E Team)</li>
 </ol>
 
-      <div style="margin-top:25px;text-align:center">
-        <a class="button" href="#">Download Full PDF Report</a>
-      </div>
+
+        <div style="margin-top:25px;text-align:center">
+            <a class="button" href="newsletter.pdf">Download Full PDF Report</a>
+        </div>
+
+        <div class="credits">
+            <span class="editor">Editor:</span> Mohammed<br>
+            <span class="contributors">Contributors:</span> Ajaw & Yilebes
+        </div>
     </div>
 
     <div class="footer">
-      OAF Ethiopia — Monitoring &amp; Evaluation • Contact: mande-team@oaf.org<br>
-      To print, please use your browser's print to PDF function.
+      OAF Ethiopia — Monitoring, Evaluation & Learning • Contact: mande-team@oaf.org
     </div>
   </div>
 </body>
