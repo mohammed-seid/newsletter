@@ -23,7 +23,7 @@ def build_newsletter():
         final_html = template_html.replace('{{content}}', html_content)
 
         # Write the final HTML to a new file
-        output_filename = 'newsletter_final.html'
+        output_filename = 'docs/index.html'
         with open(output_filename, 'w', encoding='utf-8') as f:
             f.write(final_html)
 
